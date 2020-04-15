@@ -235,6 +235,7 @@ span.m-left {
   right: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  text-align: center;
 }
 
 .about-me-info p {
@@ -256,7 +257,8 @@ span.m-left {
 }
 
 .skills {
-  height: 100vh;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
 .skills h1, .contact h1 {
@@ -311,7 +313,7 @@ span.m-left {
 	background: rgba(0, 0, 0, 0.1);
 	padding: 0 20px;
 	height:25px;
-	line-height: 35px;
+	line-height: 25px;
 	border-top-left-radius:3px;
 	border-bottom-left-radius:3px;
 }
@@ -336,71 +338,76 @@ span.m-left {
 }
 
 .complete .skill-bar-percent {
-	color: #fff;
+	color: #ed5565d9;
 }
 
 .complete.server .skill-bar-percent {
-	color: #333;
+	color: #ed5565d9;
 }
 
 .html5 .skillbar-title {
-	background: #d35400;	
+	background: #ed5565d9;	
 }
 
 .html5 .skillbar-bar {
-	background: #e67e22;	
+	background: #ed5565d9;	
 }
 
 
 .android .skillbar-title {
-	background: #2980b9;	
+	background: #ed5565d9;	
 }
 
 .android .skillbar-bar {
-	background: #3498db;	
+	background: #ed5565d9;	
 }
 
 .javascript .skillbar-title {
-	background: #fac552;
+	background: #ed5565d9;
 }
 .javascript .skillbar-bar {
-	background: #f1ac18;
+	background: #ed5565d9;
 }
 
 .java .skillbar-title {
-	background: #2c3e50;	
+	background: #ed5565d9;	
 }
 
 .java .skillbar-bar {
-	background: #2c3e50;	
+	background: #ed5565d9;	
 }
 
 .php .skillbar-title {
-	background: #46465e;	
+	background: #ed5565d9;	
 }
 
 .php .skillbar-bar {
-	background: #5a68a5;	
+	background: #ed5565d9;	
 }
 
 .ios .skillbar-title {
-	background: #333333;	
+	background: #ed5565d9;	
 }
 
 .ios .skillbar-bar {
-	background: #525252;	
+	background: #ed5565d9;	
 }
 
 .wordpress .skillbar-title {
-	background: #5e2750;	
+	background: #ed5565d9;	
 }
 
 .wordpress .skillbar-bar {
-	background: #d43227;	
+	background: #ed5565d9;	
 }
 /******************************************************/
 
 /*chips*/
+.chips-container {
+  margin: 1.5em auto;
+  max-width: 560px;
+}
+
 .chip {
   display: inline-block;
   padding: 0 25px;
@@ -409,9 +416,12 @@ span.m-left {
   line-height: 30px;
   border-radius: 25px;
   background-color: #f1f1f1;
+  margin: 5px;
+  color: #eb3749d9;
+  font-weight: bold;
 }
 .chip:hover{
-  background-color: rgb(108, 107, 107);
+  background-color: rgb(244, 214, 214);
 }
 /******************************************************/
 
