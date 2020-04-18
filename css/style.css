@@ -19,28 +19,6 @@ nav ul, .main-info-section, .work-category {
   justify-content: space-between;
 }
 
-/*MENU EFFECT
-.navMenu {
-  font-family: 'Titillium Web';
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 600;
-}
-
-.navMenu * {
-  box-sizing: border-box;
-  transition: all .35s ease;
-}
-
-.navMenu li {
-  display: inline-block;
-  list-style: outside none none;
-  margin: .5em 1em;
-  padding: 0;
-}
-*/
-
-
 .navMenu a {
   padding: .5em .8em;
   color: rgba(255,255,255,.5);
@@ -89,7 +67,7 @@ nav ul, .main-info-section, .work-category {
 /****************************************************/
 
 body {
-  background-color: /*#252627*/#011b35;
+  background-color: #011b35;
 }
 
 header {
@@ -425,51 +403,9 @@ span.m-left {
 }
 /******************************************************/
 
-/*.html {
-  display: flex;
-  flex-wrap: wrap;
+.work-category{
   justify-content: center;
-  margin-bottom: 40px;
 }
-
-div[class^='tag-']{
-  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
-  width: 120px;
-  height: 30px;
-  background-color: #178547;
-  margin-right: 30px;
-}
-
-div[class^='tag-'] p{
-  color: #ffffff;
-  text-align: left;
-  /*padding-left: left;*
-  font-size: 1.1rem;
-  padding-top: 3px;
-}
-
-.progressbar {
-  position: relative;
-  width: 600px;
-  height: 20px;
-  border: 2px solid #48cfad;
-  border-radius: 20px;
-  margin-top: 7px;
-}
-
-div[class^='bar-']{
-  position: absolute;
-  background-color: #48cfad;
-  height: 10px;
-  border-radius: 20px;
-  margin-top: 2.7px;
-}
-
-.bar-html, .bar-java, .bar-javascript, .bar-php {
-  width: calc(0% - 6px);
-}
-*/
-
 .work-category button {
   text-transform: capitalize;
   border: 3px solid #ed5565;
@@ -481,13 +417,19 @@ div[class^='bar-']{
   background-color: #252627;
   outline: none;
   cursor: pointer;
+  margin: auto;
 }
 
 div[class^='category-'] {
   margin-top: 50px;
-  display: grid;
+  /*display: grid;*/
   grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
-  grid-gap: 20px;
+  grid-gap: 40px;
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-left: 25%;
+margin-right: 25%;
 }
 
 .work a {
@@ -516,6 +458,8 @@ div.hideCategory {
 .showCategory {
   display: block;
 }
+
+/***************************************************************/
 
 .contact {
   margin-top: 50px;
@@ -635,6 +579,99 @@ footer p{
   font-size: 1.2rem;
   padding: 30px 0;
 }
+
+
+/***************************************************/
+
+/*CARD SECTION**************************************/
+
+.card {
+  height: 300px;
+  width: 230px;
+  position: relative;
+  transition: .5s all ease-out;
+  transform: rotateY(0) scale(1);
+  box-shadow: 0 2px 4px rgba(0,0,0,.3);
+}
+
+.hover-area:hover .card {
+      transform: rotateY(.5turn) scale(1.15);
+      box-shadow: 0 10px 30px rgba(0,0,0,.16);
+}
+
+.card > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.card__front {
+  background-color: #b0c2dc;
+  background-size: cover;
+  transition: .4 all linear;
+  color: #03446A;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2em;
+  border-radius: 20%;
+
+}
+
+.card__front h3{
+  font-family: 'Arial Narrow';
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border-bottom: 2px solid #7f9491;
+  line-height: 2em;
+}
+
+.card__front img {
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+
+.card__back {
+  background: #dd4b39;
+  color: #ffffff;
+  opacity: 0;
+  transition-delay: .17s;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2em;
+  transform: rotateY(.5turn);
+  font-family: 'Georgia';
+}
+
+.card__back h3 {
+  font-family: 'Arial Narrow';
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border-bottom: 2px solid #7f9491;
+  line-height: 1em;
+}
+
+.card__back a {
+  color: #c4d4d2;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.card__back a:hover {
+  color: #021512;
+}
+
+.hover-area:hover .card__back {
+  opacity: 1;
+  transition-delay: .17s;
+}
+
+/***************************************************/
+
 
 
 

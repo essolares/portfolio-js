@@ -16,9 +16,7 @@
 </head>
 
 <body>
-
     <div class="container navbar">
-
         <header>
             <div class="lgo">
                 <h1>Edgar</h1>
@@ -91,7 +89,8 @@
                 business solutions using client-focused methodologies.
             </p>
             <p>Self-learner and research capability for new technologies and development logic for learning any
-                programming language. Over <span class="name">10 </span> years of experience being part of different technology projects as  independent consultant and freelance.
+                programming language. Over <span class="name">10 </span> years of experience being part of different
+                technology projects as independent consultant and freelance.
             </p>
 
         </div>
@@ -168,25 +167,81 @@
         </div>
     </div>
 
-    <div class="container work" id="work" style="display: none;">
+    <div class="container work" id="work">
         <h1>work</h1>
         <div class="work-category">
-            <button id="designing" class="active" onclick="showRequiredCategory(this)">Web Designing</button>
-            <button id="animation" onclick="showRequiredCategory(this)">Web Animation</button>
-            <button id="projects" onclick="showRequiredCategory(this)">Java Projects</button>
+            <button id="consulting" class="active" onclick="showRequiredCategory(this)">Software Consulting</button>
+            <button id="freelance" onclick="showRequiredCategory(this)">Freelance Projects</button>
+            <button id="designing" style="display: none;" onclick="showRequiredCategory(this)">Java Projects</button>
         </div>
-        <div class="category-designing showCategory">
-            <a href=""><img src="img/1.png" alt=""></a>
-            <a href=""><img src="img/2.png" alt=""></a>
-            <a href=""><img src="img/3.png" alt=""></a>
-            <a href=""><img src="img/1.png" alt=""></a>
-            <a href=""><img src="img/2.png" alt=""></a>
+        <br>
+        <div class="category-consulting showCategory">
+            <div class="hover-area">
+                <div class="card">
+                    <div class="card__front">
+                        <h3>MCC - Millenium Challenge Corporation</h3>
+                        <img src="./img/mcclogo.png" alt="">
+                    </div>
+                    <div class="card__back">
+                        <p>Software Project Consultant to Guatemala – Software Engineering to implement the new “Value
+                            Database” project for customs in Guatemala.
+                            <a target="blank" href="https://www.mcc.gov/">Learn More ›</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hover-area">
+                <div class="card">
+                    <div class="card__front">
+                        <h3>SAT - Guatemala</h3>
+                        <img src="./img/satlogo.png" alt="">
+                    </div>
+                    <div class="card__back">
+                        <p>Independent IT Consultant - Tax administration of Guatemala, implementation of customs
+                            software projects.
+                            <a target="blank" href="https://www.sat.gob.gt">Learn More ›</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hover-area">
+                <div class="card">
+                    <div class="card__front">
+                        <h3>SIECA - Central America</h3>
+                        <img src="./img/siecalogo.png" alt="">
+                    </div>
+                    <div class="card__back">
+                        <p>Independent IT Consultant - Customs software development consulting to implement cross-border
+                            controls.
+                            <a target="blank" href="https://www.sieca.int">Learn More ›</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="category-animation hideCategory">
-            <a href=""><img src="img/3.png" alt=""></a>
-            <a href=""><img src="img/2.png" alt=""></a>
-            <a href=""><img src="img/1.png" alt=""></a>
-            <a href=""><img src="img/3.png" alt=""></a>
+
+        <div class="category-freelance hideCategory">
+            <div class="hover-area">
+                <div class="card">
+                    <div class="card__front">
+                        <h3>Creative Works - NY, US</h3>
+                        <img src="./img/cwlogo.png" alt="">
+                    </div>
+                    <div class="card__back">
+                        <p>Remote freelance web software development for different assigned clients and technologies.
+                            <a target="blank" href="https://www.creativeworks.us/">Learn More ›</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="hover-area">
+                <div class="card">
+                    <div class="card__front">
+                        <h3>4over4 - US</h3>
+                        <img src="./img/4o4logo.png" alt="">
+                    </div>
+                    <div class="card__back">
+                        <p>Remote web and mobile (Android / IOS ) software development for different assigned projects.
+                            <a target="blank" href="https://www.4over4.com/">Learn More ›</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="category-projects hideCategory">
             <a href=""><img src="img/2.png" alt=""></a>
@@ -215,7 +270,8 @@
                     <a target="_blank" href="https://github.com/essolares"><i class="fab fa-github icon"></i></a>
                 </li>
                 <li>
-                    <a target="_blank" href="mailto: essolares@hotmail.com"><i class="fas fa-envelope-open icon"></i></a></li>
+                    <a target="_blank" href="mailto: essolares@hotmail.com"><i
+                            class="fas fa-envelope-open icon"></i></a></li>
                 <li>
                     <a target="_blank" href="skype:essolares?userinfo"><i class="fab fa-skype icon"></i></a></li>
             </ul>
@@ -224,21 +280,8 @@
     </div>
     <footer>
         <hr>
-        <p>2019 Copyright. All Rights Reserved.</p>
+        <p>2020 Copyright. All Rights Reserved.</p>
     </footer>
-
-    <!--
-        
-        <script src="js/animation.gsap.min.js"></script>
-        <script src="js/TimelineLite.min.js"></script>
-        <script src="js/TweenMax.min.js"></script>
-        <script src="js/CSSPlugin.min.js"></script>
-        <script src="js/ScrollMagic.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
-    -->
-
     <script src="./js/script.js"></script>
 </body>
 
